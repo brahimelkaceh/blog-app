@@ -1,0 +1,23 @@
+<header>
+  <div class="user-info">
+    <img src="/static/uploads/<%= image %>" alt="User Image" />
+    <div>
+      <p>Welcome,<span> <%= username %></span></p>
+      <a type="button" href="/logout" class="logout-btn">
+        <!-- <span class="material-symbols-outlined"> logout </span> -->
+        <span>logout</span>
+      </a>
+    </div>
+  </div>
+  <!-- Add links to the header -->
+  <nav>
+    <ul>
+      <li><a href="/dashboard">Dashboard</a></li>
+      <li><a href="/dashboard/allBlogs">All Blogs</a></li>
+      <li><a href="#">All Users</a></li>
+      <li><a href="#">My Blogs</a></li>
+      <li><a href="#">Create Blog</a></li>
+      <li><a href="#">Profile</a></li>
+    </ul>
+  </nav>
+</header>

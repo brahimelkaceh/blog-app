@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/css/styles.css" />
+
+    <title>Edit Blog Post</title>
+  </head>
+  <body>
+    <%- include('../partials/navbar') %>
+
+    <h1 class="main-title">Edit Blog Post</h1>
+    <main class="edit-blog">
+      <form
+        action="/dashboard/allBlogs/editBlog/<%= blog.id %>"
+        method="POST"
+        enctype="multipart/form-data"
+      >
+        <% if (errors && errors.length > 0) { %>
+        <div class="error-messages">
+          <% errors.forEach(function(error) { %>
+          <p class="error-message"><%= error %></p>
+          <% }); %>
+        </div>
+        <% } %>
+        <input
+          class="input"
+          type="text"
+          id="title"
+          name="title"
+          placeholder="Title"
+          value="<%= blog.blogTitle %>"
+        />
+
+        <textarea
+          class="input"
+          id="content"
+          name="content"
+          placeholder="Content"
+          rows="6"
+        >
+<%= blog.blogContent %></textarea
+        >
+        <input
+          type="file"
+          id="image"
+          name="blogImage"
+          class="custom-file-input"
+          id="imageInput"
+        />
+        <div>
+          <img
+            class="edit-blog-image"
+            src="/static/uploads/<%= blog.blogImage %>"
+            alt="Current Image"
+            id="selectedImage"
+          />
+        </div>
+        <button
+          type="submit"
+          class="button"
+          onclick="return confirm('Are you sure you want to Edit this blog post?')"
+        >
+          Edit Blog
+        </button>
+      </form>
+    </main>
+    <script src="../static/js/main.js"></script>
+  </body>
+</html>

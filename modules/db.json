@@ -1,0 +1,140 @@
+{
+  "users": [
+    {
+      "username": "elkaceh",
+      "email": "Brahimsuba@gmail.com",
+      "password": "$2b$10$JTvjFvxk2nMyk1fFxaKnEeHp0BTfrfLwEnp79BGzdpwtU4PhQQrd.",
+      "filename": "1694943685902icon.webp",
+      "id": "8147d0e1-81f4-4730-9e13-b9b7ad71ada9"
+    },
+    {
+      "username": "admin",
+      "email": "admin@admin.com",
+      "password": "$2b$10$L7FS.FgngRd2vRijNbgMfO7FY3I3UcJCz6Z0S6mcFFYvfiyvwlXh.",
+      "filename": "1694947449003IMG-20230321-WA0032 (1).jpg",
+      "id": "3e03012f-c9d9-4415-966c-9e4283129888"
+    }
+  ],
+  "blogs": [
+    {
+      "blogTitle": "Sed omnis occaecat v",
+      "blogContent": "Molestiae numquam ocNote: You are responsible for creating the directory when providing destination as a function. When passing a string, multer will make sure that the directory is created for you.\r\n\r\n",
+      "blogImage": "1694944395207pxfuel.jpg",
+      "timeCreated": "2023-09-17 10:53",
+      "user": {
+        "blogAuthor": "elkaceh",
+        "blogAuthorId": "8147d0e1-81f4-4730-9e13-b9b7ad71ada9",
+        "authorImage": "1694943685902icon.webp"
+      },
+      "id": 1
+    },
+    {
+      "blogTitle": "my title ",
+      "blogContent": "Make sure to adjust the code as needed and implement the fetchBlogById function to fetch specific blog post data by ID from your data source (e.g., database, file, or API). Additionally, create the necessary EJS templates (e.g., \"editBlogPage.ejs\") for rendering the edit page and other views.\r\n\r\n",
+      "blogImage": "1694945879555849790.gif",
+      "timeCreated": "2023-09-17 11:17",
+      "user": {
+        "blogAuthor": "elkaceh",
+        "blogAuthorId": "8147d0e1-81f4-4730-9e13-b9b7ad71ada9",
+        "authorImage": "1694943685902icon.webp"
+      },
+      "id": 2
+    },
+    {
+      "blogTitle": "Consequat Quas culp",
+      "blogContent": "Life is a profound journey, a complex tapestry of experiences, emotions, and growth. It's a gift that unfolds differently for each individual, filled with both joys and challenges. From the moment we take our first breath to the last, life presents us with an ever-changing landscape to explore.\r\n\r\n",
+      "blogImage": "1694956942244wallpaperflare.com_wallpaper (1).jpg",
+      "timeCreated": "2023-09-17 14:22",
+      "user": {
+        "blogAuthor": "admin",
+        "blogAuthorId": "3e03012f-c9d9-4415-966c-9e4283129888",
+        "authorImage": "1694947449003IMG-20230321-WA0032 (1).jpg"
+      },
+      "id": 3
+    },
+    {
+      "blogTitle": "Quam distinctio Eum id veniam",
+      "blogContent": "Totam enim placeat Of course! I'd be happy to generate a text for you. Could you please provide me with a topic or a specific prompt to get started?\r\n\r\n\r\n\r\n\r\n",
+      "blogImage": "1694975375774bokeh-macro-dark-background-glitter-bubbles-colorful-blue-3840x3072-8226.jpg",
+      "timeCreated": "2023-09-17 19:29",
+      "user": {
+        "blogAuthor": "admin",
+        "blogAuthorId": "3e03012f-c9d9-4415-966c-9e4283129888",
+        "authorImage": "1694947449003IMG-20230321-WA0032 (1).jpg"
+      },
+      "id": 4
+    },
+    {
+      "blogTitle": "Dicta eligendi est a",
+      "blogContent": "Quaerat repudiandae ",
+      "blogImage": "1694969209575849790.gif",
+      "timeCreated": "2023-09-17 17:46",
+      "user": {
+        "blogAuthor": "admin",
+        "blogAuthorId": "3e03012f-c9d9-4415-966c-9e4283129888",
+        "authorImage": "1694947449003IMG-20230321-WA0032 (1).jpg"
+      },
+      "id": 6
+    },
+    {
+      "blogTitle": "Molestiae elit et m",
+      "blogContent": "Id non quia odit vel",
+      "blogImage": "1694970433355849790.gif",
+      "timeCreated": "2023-09-17 18:07",
+      "user": {
+        "blogAuthor": "admin",
+        "blogAuthorId": "3e03012f-c9d9-4415-966c-9e4283129888",
+        "authorImage": "1694947449003IMG-20230321-WA0032 (1).jpg"
+      },
+      "id": 8
+    },
+    {
+      "blogTitle": "In duis nobis dolore",
+      "blogContent": "Tempora voluptatem a",
+      "blogImage": "1694971477346wallpaperflare.com_wallpaper (1).jpg",
+      "timeCreated": "2023-09-17 18:24",
+      "user": {
+        "blogAuthor": "admin",
+        "blogAuthorId": "3e03012f-c9d9-4415-966c-9e4283129888",
+        "authorImage": "1694947449003IMG-20230321-WA0032 (1).jpg"
+      },
+      "id": 9
+    },
+    {
+      "blogTitle": " this is title",
+      "blogContent": "In this code, if there are errors and the errors array has a length greater than 0, it will set the title to blog.blogTitle. Otherwise, it will set the title to \"No Title Available.\" This will display the title based on whether there are errors or not.\r\n\r\n\r\n\r\n",
+      "blogImage": "1694974800066pxfuel (1).jpg",
+      "timeCreated": "2023-09-17 19:20",
+      "user": {
+        "blogAuthor": "admin",
+        "blogAuthorId": "3e03012f-c9d9-4415-966c-9e4283129888",
+        "authorImage": "1694947449003IMG-20230321-WA0032 (1).jpg"
+      },
+      "id": 10
+    },
+    {
+      "blogTitle": "Atque accusantium labore qui sssss",
+      "blogContent": "Eiusmod voluptate consequuntur",
+      "blogImage": "1694974944540wallpaperflare.com_wallpaper (1).jpg",
+      "timeCreated": "2023-09-17 19:22",
+      "user": {
+        "blogAuthor": "admin",
+        "blogAuthorId": "3e03012f-c9d9-4415-966c-9e4283129888",
+        "authorImage": "1694947449003IMG-20230321-WA0032 (1).jpg"
+      },
+      "id": 11
+    },
+    {
+      "blogTitle": "Sit iure voluptatem error omni",
+      "blogContent": "Vitae vel ut velit ipsum accu",
+      "blogImage": "1694975190647vegeta-dragon-ball-super-black-background-3840x2160-4956.png",
+      "timeCreated": "2023-09-17 19:26",
+      "user": {
+        "blogAuthor": "admin",
+        "blogAuthorId": "3e03012f-c9d9-4415-966c-9e4283129888",
+        "authorImage": "1694947449003IMG-20230321-WA0032 (1).jpg"
+      },
+      "id": 12
+    }
+  ]
+}

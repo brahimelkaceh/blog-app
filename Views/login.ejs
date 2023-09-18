@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="/static/css/styles.css" />
+  </head>
+  <body>
+    <form action="/login" method="post" class="form">
+      <% if (errors && errors.length > 0) { %>
+      <div class="error-messages">
+        <% errors.forEach(function(error) { %>
+        <p class="error-message"><%= error %></p>
+        <% }); %>
+      </div>
+      <% } %>
+      <span class="title">You really like the project</span>
+      <span class="sub mb">Login to get full access now :)</span>
+      <input type="text" class="input" placeholder="username" name="username" />
+      <input
+        type="password"
+        class="input"
+        placeholder="password"
+        name="password"
+      />
+      <span class="sub"
+        >You don't have an account ? <a href="./register">Register</a></span
+      >
+      <button class="submit">Login</button>
+    </form>
+  </body>
+</html>

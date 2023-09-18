@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/css/styles.css" />
+
+    <title><%= blog.blogTitle %></title>
+  </head>
+  <body>
+    <%- include('../partials/navbar') %>
+
+    <div class="single-blog">
+      <h1 class="blog-title"><%= blog.blogTitle %></h1>
+
+      <div class="blog-image">
+        <img
+          src="/static/uploads/<%= blog.blogImage %>"
+          alt="<%= blog.blogTitle %> Image"
+        />
+      </div>
+      <p class="blog-content"><%= blog.blogContent %></p>
+
+      <div class="blog-footer">
+        <div class="user-content">
+          <div class="user-image">
+            <img
+              src="/static/uploads/<%= blog.user.authorImage %>"
+              alt="<%= image %>"
+            />
+          </div>
+          <div class="user-info">
+            <p><%= blog.user.blogAuthor %></p>
+            <span><%= blog.timeCreated %></span>
+          </div>
+        </div>
+        <% if (blog.user.blogAuthorId === userId) { %>
+        <div class="user-content">
+          <!-- Edit button -->
+          <a
+            href="/dashboard/allBlogs/editBlog/<%= blog.id %>"
+            class="edit-button"
+            >Edit</a
+          >
+
+          <!-- Delete button -->
+          <a
+            href="/dashboard/allBlogs/delete/:<%= blog.id %>"
+            class="delete-button"
+            onclick="return confirm('Are you sure you want to delete this blog post?')"
+            >Delete</a
+          >
+        </div>
+        <% } %>
+      </div>
+    </div>
+  </body>
+</html>

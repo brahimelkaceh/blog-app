@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="/static/css/styles.css" />
+    <style>
+      /* Add your custom CSS styles and animations here */
+    </style>
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <%- include('../partials/navbar') %>
+    <h1 class="main-title">Create a New Blog Post</h1>
+    <main class="create-blog">
+      <form action="/dashboard" method="post" enctype="multipart/form-data">
+        <% if (errors && errors.length > 0) { %>
+        <div class="error-messages">
+          <% errors.forEach(function(error) { %>
+          <p class="error-message"><%= error %></p>
+          <% }); %>
+        </div>
+        <% } %>
+        <input
+          class="input"
+          type="text"
+          id="title"
+          name="title"
+          placeholder="Title"
+        />
+
+        <textarea
+          class="input"
+          id="content"
+          name="content"
+          placeholder="Content"
+          rows="6"
+        ></textarea>
+        <input
+          class="custom-file-input"
+          type="file"
+          name="image"
+          accept="image/*"
+          id="imageInput"
+        />
+        <div>
+          <img
+            class="blog-image"
+            id="selectedImage"
+            src=""
+            alt="Current Image"
+          />
+        </div>
+        <button type="submit" class="button">Create Blog</button>
+      </form>
+    </main>
+
+    <script src="/static/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!-- views/all-blogs.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/css/styles.css" />
+
+    <title>All Blogs</title>
+  </head>
+  <body>
+    <%- include('../partials/navbar') %>
+
+    <h1 class="main-title">all blogs</h1>
+
+    <div class="blogs-container">
+      <% blogs.forEach((blog) => { %>
+      <div class="blog-item">
+        <a href="../Views/singleBlog" target="_blank" id="read-more-btn"> </a>
+        <div class="blog-image">
+          <img
+            src="/static/uploads/<%= blog.blogImage %>"
+            alt="<%= blog.blogImage %>"
+          />
+        </div>
+
+        <div class="content">
+          <h4 class="blog-title"><%= blog.blogTitle %></h4>
+          <p class="blog-content">
+            <%= blog.blogContent.slice(0, 25) + (blog.blogContent.length > 25 ?
+            '...' : '') %>
+            <a
+              href="/dashboard/allBlogs/:<%= blog.id %>"
+              target="_blank"
+              id="read-more-btn"
+            >
+              read more
+            </a>
+          </p>
+        </div>
+        <div class="user-content">
+          <div class="user-image">
+            <img
+              src="/static/uploads/<%= blog.user.authorImage %>"
+              alt="<%= image %>"
+            />
+          </div>
+          <div class="user-info">
+            <p><%= blog.user.blogAuthor %></p>
+            <span><%= blog.timeCreated %></span>
+          </div>
+        </div>
+      </div>
+      <% }) %>
+    </div>
+  </body>
+  <script src="../public/js/main.js"></script>
+</html>
